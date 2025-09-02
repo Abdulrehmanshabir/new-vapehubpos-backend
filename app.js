@@ -17,7 +17,7 @@ const branchRoutes = require('./src/routes/branches');
 const app = express();
 app.use(helmet());
 // Allow multiple origins via comma-separated env (e.g., local + Vercel)
-const allowedOrigins = (process.env.CORS_ORIGIN || 'http://localhost:5173', https://new-vapehubpos-frontend-rpay-hv0ko7a28.vercel.app/)
+const allowedOrigins = (process.env.CORS_ORIGIN || 'http://localhost:5173',  'https://new-vapehubpos-frontend-rpay-hv0ko7a28.vercel.app')
   .split(',')
   .map(s => s.trim())
   .filter(Boolean);
